@@ -13,8 +13,8 @@ class City {
 	
 	public City(String name) {
 		this.name = name;
-		this.location_x = (int)(Math.random() * 360);
-		this.location_y = (int)(Math.random() * 360);
+		this.location_x = (int)(Math.random() * (360 + 1));
+		this.location_y = (int)(Math.random() * (360 + 1));
 	}
 	
 	public String getName() { return this.name; }
