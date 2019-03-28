@@ -35,6 +35,7 @@ class Employee {
 	public void setSalary(int salary) { this.salary = salary; }
 	public void setVacationDays(int vacationDays) { this.vacationDays = vacationDays; }
 	
+	@Override
 	public boolean equals(Object obj) {
 		if(obj instanceof Employee){
 			Employee employee = (Employee)obj;
@@ -43,6 +44,7 @@ class Employee {
 		return false;
 	}
 	
+	@Override
 	public String toString() {
 		return String.format("Name: %s, Age: %d, Position: %s, Salary: %d, VacationDays: %d", this.name, this.age, this.position, this.salary, this.vacationDays);
 	}
