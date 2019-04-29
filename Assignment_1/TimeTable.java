@@ -68,7 +68,7 @@ public class TimeTable {
         return null;
     }
 
-    public Boolean setSchedule(String day, int period, String name, String tutor, String room) {
+    public boolean setSchedule(String day, int period, String name, String tutor, String room) {
         int dayValue = getNumByDay(day);
         
         if (dayValue == -1 || period == 3 || period == 7) {
@@ -77,9 +77,6 @@ public class TimeTable {
         }
 
         Subject subject = new Subject(name, tutor, room);
-        
-        System.out.println(dayValue);
-        System.out.println(period);
         
         this.timeTable[dayValue][period - 1] = subject;
         System.out.println("Class successfully added");
