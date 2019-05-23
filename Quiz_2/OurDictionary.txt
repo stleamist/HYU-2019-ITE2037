@@ -1,0 +1,10 @@
+1. word: hyunsoo
+   definition: ta
+2. word: jmt
+   definition: taste
+3. word: itbt
+   definition: building
+4. word: oep
+   definition: original
+5. word: lee
+   definition: professor
