@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -117,7 +118,11 @@ public class Program {
 						
 						System.out.println("exit program");
 						System.exit(0);
+					} catch (FileNotFoundException e) {
+						System.out.println("file write error");
 					} catch (IOException e) {
+						System.out.println("file write error");
+					} catch (Exception e) {
 						System.out.println(e.getMessage());
 					}
 					break;
