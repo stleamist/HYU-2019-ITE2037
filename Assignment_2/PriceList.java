@@ -56,7 +56,7 @@ class PriceList {
 		entirePriceList += "=======================================\n";
 		
 		for (int i = 0; i < this.size; i++) {
-			entirePriceList += "Region #" + i + 1;
+			entirePriceList += "Region #" + (i + 1);
 			entirePriceList += "\t";
 			entirePriceList += priceList[i][0].getPriceInStore();
 			entirePriceList += "\t";
