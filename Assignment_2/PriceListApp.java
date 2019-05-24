@@ -29,7 +29,6 @@ class PriceListApp {
 						if (priceList.isFull()) {
 							throw new FullArrayException();
 						}
-						
 					} catch (FullArrayException e) {
 						int amount;
 						System.out.print(e.getMessage() + ": ");
