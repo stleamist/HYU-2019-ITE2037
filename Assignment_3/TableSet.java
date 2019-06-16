@@ -10,7 +10,9 @@ class TableSet {
 	}
 	
 	void addToTable(int index, int tableNum, String name) {
-//		tableSet[index].dishSet
+		Dish dish = new Dish(tableNum, name);
+		tableSet[index].setTableNum(tableNum);
+		tableSet[index].getDishSet().add(dish);
 	}
 	
 	public Table[] getTableSet() {
